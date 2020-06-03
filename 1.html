@@ -1,0 +1,372 @@
+﻿
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<heard>
+<meta charaet="utf-8"/>
+<title>Мультфильмы для каждого</title>
+</head>
+
+<BODY BACKGROUND="3.jpg">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#cartoons">Мультфильмы</a>
+  <a href="https://deti-online.com/pesni/"target="_blank">Песенки</a>
+  <a href="https://tlum.ru/news/25-faktov-o-multfilmah-disney-kotorye-vy-ne-znali/"target="_blank">Интересное</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Поиск..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    background-color: #5b92e5;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #1e90ff;
+}
+
+#myInput {
+    border-box: box-sizing;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+    position: relative;
+    left: 1242px;
+    top: 50px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Фильтры</button>
+  <div id="myDropdown" class="dropdown-content">
+    
+    <a href="2.html"target="_blank">Для детей</a>
+    <a href="3.html"target="_blank">Зарубежные</a>
+    <a href="4.html"target="_blank">Мюзикл</a>
+    <a href="5.html"target="_blank">Приключения</a>
+    <a href="6.html"target="_blank">Развивающие</a>
+    <a href="7.html"target="_blank">Русские</a>
+    <a href="8.html"target="_blank">Семейные</a>
+  
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<HEAD><CENTER><FONT SIZE=7><B>Мультфильмы</B></FONT></CENTER></HEAD>
+<p style="text-indent:100px"><VAR><FONT SIZE=5><B>Мультфильм</B> - это время, которое ты провёл с добрыми, отзывчивыми, весёлыми героями.</p> 
+<p style="text-indent:100px">Представляем вашему вниманию подборку мультфильмов на любой вкус.</p></VAR>
+<p style="text-indent:100px">Топ 10 лучших мультфильмов:</p>
+ 
+<p style="text-indent:100px"><legend> <FONT SIZE=6><B><a href="https://www.youtube.com/watch?v=huu09h7HX5A"target="_blank">1. Король Лев (1994)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="4.jpg"  hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p>
+<p style="text-indent:0px"><FONT SIZE=3>The Lion King, 89 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Драма, Приключения, Семейный, Мюзикл</p>
+<p style="text-indent:0px"><B>Режиссёр: </B>Роджер Аллерс, Роб Минкофф</p>
+<p style="text-indent:0px"><B>В ролях:</B> Мэттью Бродерик (Adult Simba - озвучка), Джереми Айронс (Scar - озвучка),<br> 
+<p style="text-indent:0px">Нэйтан Лейн (Timon - озвучка), Эрни Сабелла (Pumbaa - озвучка), Джеймс Эрл Джонс (Mufasa - озвучка)</p><br> 
+<p style="text-indent:100px"><blockquote>У величественного Короля-Льва Муфасы рождается наследник по имени Симба. 
+Уже в детстве любознательный малыш становится жертвой интриг своего завистливого дяди Шрама, мечтающего о власти.
+Симба познаёт горе утраты, предательство и изгнание, но в конце концов обретает верных друзей и находит любимую. 
+Закалённый испытаниями, он в нелёгкой борьбе отвоёвывает своё законное место в "Круге жизни", осознав, что значит быть настоящим Королём.</blockquote></p></FONT>
+
+<p style="margin-left: 100px"><legend> <FONT SIZE=6><B><a href="https://www.youtube.com/watch?v=D7iqUEWEPOA"target="_blank">2. ВАЛЛ·И (2008)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="5.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>WALL·E, 98 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Приключения, Семейный, Фантастика</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Эндрю Стэнтон</p>
+<p style="text-indent:0px"><B>В ролях:</B> Бен Бертт (WALLюiddot;E - M-O - озвучка), Элисса Найт (EVE - озвучка), </p>
+<p style="text-indent:0px">Джефф Гарлин (Captain - озвучка), Фред Уиллард (Shelby Forthright - BnL CEO), Джон Ратценбергер (John - озвучка)<br><br>
+<p style="text-indent:100px"><blockquote>Робот ВАЛЛ·И из года в год прилежно трудится на опустевшей Земле, очищая нашу планету от гор мусора, которые оставили после себя улетевшие в космос люди.
+поднимется к звездам и даже сумеет изменить к лучшему своих бывших хозяев, совсем позабывших родную Землю.</p></blockquote>
+
+<p style="margin-left: 100px"><legend> <FONT SIZE=6><B><a href="https://ok.lordfilm.cx/24673-kak-priruchit-drakona.html"target="_blank">3. Как приручить дракона (2010)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="6.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>How to Train Your Dragon, 98 минут</p>
+<p style="text-indent:0px"><B>Жанр: </B>Мультфильм, Комедия, Приключения, Семейный, Фэнтези</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Дин ДеБлуа, Крис Сандерс</p>
+<p style="text-indent:0px"><B>В ролях:</B> Джей Барушель (Hiccup - озвучка), Джерард Батлер (Stoick - озвучка), </p>
+<p style="text-indent:0px">Крэйг Фергюсон (Gobber - озвучка), Америка Феррера (Astrid - озвучка), Джона Хилл (Snotlout - озвучка)<br><br><br>
+<p style="text-indent:100px"><blockquote>Вы узнаете историю подростка Иккинга, которому не слишком близки традиции его героического племени,
+ много лет ведущего войну с драконами. Мир Иккинга переворачивается с ног на голову, когда он неожиданно встречает дракона Беззубика, 
+который поможет ему и другим викингам увидеть привычный мир с совершенно другой стороны…</p></blockquote>
+
+<p style="margin-left:100px"><legend> <FONT SIZE=6><B><a href="http://mega-mult.ru/multfilm/507-pesn-moria.html"target="_blank">4. Песнь моря (2014)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="7.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Song of the Sea, 93 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Семейный, Фэнтези</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Томм Мур</p>
+<p style="text-indent:0px"><B>В ролях:</B> Дэвид Роул (Ben - озвучка), Брендан Глисон (Conor - Mac Lir - озвучка), </p>
+<p style="text-indent:0px">Лиза Хэннигэн (Bronach - озвучка), Финола Флэнаган (Granny - Macha - озвучка), Люси О’Коннелл (Saoirse - озвучка)<br><br><br>
+<p style="text-indent:100px"><blockquote>Невероятная история Бена и его сестренки Сирши. 
+Вместе они пускаются в фантастическое путешествие сквозь исчезающий мир древних легенд и магии, пытаясь вернуться домой.</p></blockquote>
+
+<p style="margin-left:100px"><legend> <FONT SIZE=6><B><a href="https://ok.lordfilm.cx/19342-balto.html"target="_blank">5. Балто (1995) <a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="8.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Balto, 71 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Драма, Приключения, Семейный, История</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Саймон Уэллс</p>
+<p style="text-indent:0px"><B>В ролях:</B> Кевин Бейкон (Balto - озвучка), Боб Хоскинс (Boris - озвучка), </p>
+<p style="text-indent:0px">Бриджит Фонда (Jenna - озвучка), Джим Каммингс (Steele - озвучка), Фил Коллинз (Muk and Luk - озвучка)<br><br><br>
+<p style="text-indent:100px"><blockquote>Наполовину лайка, наполовину волк, Балто и сам не знает кто он такой на самом деле.
+Всеми гонимый бродяга в ледяной пустыне Аляски. Только его друзья русский полярный гусь Борис, медвежата Мак и Лак и красавица-лайка Дженна уверены, 
+что хотя он и не такой как все, но в его груди бьется благородное сердце.Однажды случается несчастье. Эпидемия дифтерии охватила детей небольшого поселка, 
+а свирепая вьюга сделала непроходимыми все дороги. Лишь собачья упряжка может преодолеть шестьсот миль через ослепляющий арктический шторм и привезти 
+спасительное лекарство.Но собаки сбились с дороги где-то на замерзших просторах. Теперь только Балто может найти упряжку и спасти детей, 
+а заодно стать героем и настоящей легендой!</p></blockquote>
+
+<p style="margin-left:100px"><legend> <FONT SIZE=6><B><a href="https://my.mail.ru/mail/norma29/video/28/283.html"target="_blank">6. Вверх (2009)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="9.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Up, 96 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Драма, Комедия, Приключения, Семейный</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Пит Доктер, Боб Питерсон</p>
+<p style="text-indent:0px"><B>В ролях:</B> Эдвард Эснер (Carl Fredricksen - озвучка), Кристофер Пламмер (Charles Muntz - озвучка), </p>
+<p style="text-indent:0px">Джордан Нагаи (Russell - озвучка), Боб Питерсон (Dug - Alpha - озвучка), Делрой Линдо (Beta - озвучка)<br><br><br>
+<p style="text-indent:100px"><blockquote>78-летний ворчун Карл Фредриксен считает, что жизнь обходит его стороной. Чтобы сдержать обещание, 
+данное своей почившей жене, он решает осуществить свою мечту о великом приключении, привязав тысячи воздушных шариков к своему дому и улетев в дебри Южной Америки. 
+Не пролетев и полмили, путешественник обнаруживает, что он ненароком прихватил с собой крайне разговорчивого и неисправимо жизнерадостного 8-летнего мальчика по имени Рассел.</p></blockquote>
+
+<p style="margin-left:100px"><legend> <FONT SIZE=6><B><a href="https://ok.lordfilm.cx/25269-golovolomka.html"target="_blank">7. Головоломка (2015)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="10.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Inside Out, 94 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Комедия, Семейный</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Пит Доктер, Роналдо Дель Кармен</p>
+<p style="text-indent:0px"><B>В ролях:</B> Эми Полер (Joy - озвучка), Филлис Смит (Sadness - озвучка), </p>
+<p style="text-indent:0px">Ричард Кайнд (Bing Bong - озвучка), Билл Хейдер (Fear - озвучка), Льюис Блэк (Anger - озвучка)<br><br><br>
+<p style="text-indent:100px"><blockquote>Райли — обычная 11-летняя школьница, и, как у каждого из нас, ее поведение определяют пять базовых эмоций: 
+Радость, Печаль, Страх, Гнев и Брезгливость. Эмоции живут в сознании девочки и каждый день помогают ей справляться с проблемами, руководя всеми ее поступками. 
+До поры до времени эмоции живут дружно, но вдруг оказывается, что Райли и ее родителям предстоит переезд из небольшого уютного городка в шумный и людный мегаполис. 
+Каждая из эмоций считает, что именно она лучше прочих знает, что нужно делать в этой непростой ситуации, и в голове у девочки наступает полная неразбериха. 
+Чтобы наладить жизнь в большом городе, освоиться в новой школе и подружиться с одноклассниками, эмоциям Райли предстоит снова научиться работать сообща.</p></blockquote>
+
+<p style="margin-left:100px"><legend> <FONT SIZE=6><B> <a href="https://ok.lordfilm.cx/24667-korporacija-monstrov.html"target="_blank">8. Корпорация монстров (2001)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="11.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Monsters, Inc., 92 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Комедия, Приключения, Семейный, Фэнтези</p>
+<p style="text-indent:0px"><B>Режиссёр: </B>Пит Доктер, Дэвид Силверман, Ли Анкрич</p>
+<p style="text-indent:0px"><B>В ролях:</B> Джон Гудман (James P. 'Sulley' Sullivan - озвучка), Билли Кристал (Mike Wazowski - озвучка), </p>
+<p style="text-indent:0px">Мэри Гиббс (Boo - озвучка), Стив Бушеми (Randall Boggs - озвучка), Джеймс Коберн (Henry J. Waternoose - озвучка)<br><br><br>
+<p style="text-indent:100px"><blockquote>Склизкий гад в сливном бачке, мохнатый зверь, похожий на чудовище из «Аленького цветочка», гигантские мокрицы под кроватью
+ — все они существуют на самом деле. Все, что им нужно — пугать детей, потому что из детских криков они получают электричество.Полнометражный мультфильм рассказывает
+ о кризисах в мире монстров, их жизни. Но однажды вся мирная жизнь монстров оказывается под угрозой: в их мир попадает ребенок. А с детьми столько хлопот, что они
+ могут довести даже монстров.</p></blockquote>
+
+<p style="margin-left:100px"><legend> <FONT SIZE=6><B> <a href="https://ok.lordfilm.cx/24811-krasavica-i-chudovische.html"target="_blank">9. Красавица и чудовище (1991)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="12.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Ice Age, 81 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Семейный, Фэнтези, Мелодрама, Мюзикл</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Гари Труздейл, Кирк Уайз</p>
+<p style="text-indent:0px"><B>В ролях:</B> Пейдж О’Хара (Belle - озвучка), Робби Бенсон (Beast - озвучка),</p>
+<p style="text-indent:0px">Ричард Уайт (Gaston - озвучка), Джерри Орбак (Lumiere - озвучка), Дэвид Огден Стайерз (Cogsworth - рассказчик - озвучка)<br><br><br>
+<p style="text-indent:100px"><blockquote>В заколдованном замке, скрытом в темном лесу, живет ужасное Чудовище. 
+Растопить лед в его сердце и вернуть ему человеческий облик, сняв заклятие, может только прекрасная девушка, которая полюбит его таким, какой он есть.</p></blockquote>
+
+<p style="margin-left:100px"><legend> <FONT SIZE=6><B><a href="https://ok.lordfilm.cx/24814-lednikovyj-period.html"target="_blank">10. Ледниковый период (2002)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="13.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Song of the Sea, 93 минут</p>
+<p style="text-indent:0px"><B>Жанр:</B> Мультфильм, Комедия, Приключения, Семейный</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Крис Уэдж, Карлос Салдана</p>
+<p style="text-indent:0px"><B>В ролях: </B>Рэй Романо (Manfred - озвучка), Джон Легуизамо (Sid - озвучка),</p>
+<p style="text-indent:0px">Дэнис Лири (Diego - озвучка), Горан Вишнич (Soto - озвучка), Джек Блэк (Zeke - озвучка)<br><br><br>
+<p style="text-indent:100px"><blockquote>Веселые и опасные приключения героев. 20 тыс. лет назад. Чтобы избежать приближающегося из-за наступления ледникового 
+периода холода, животные мигрируют на юг. Однако некоторые из них все-таки решают остаться - одинокий, угрюмый мамонт Манфред, а также бесшабашный ленивец Сид.
+Случайно эта парочка наталкивается на человеческого детеныша. Они решаются вернуть его людям и отправляются в путешествие. По пути они встречают саблезубого хитрого
+ тигра. И теперь этой веселой компании предстоят забавные приключения!.</p></blockquote>
+
+
+
+
+
+</FONT>
+</body>
+</html>
